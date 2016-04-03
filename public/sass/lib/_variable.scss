@@ -1,0 +1,48 @@
+// Color Variables
+
+$bg: #fff; // Background color
+
+$base: #000; // Base text color
+$light: #999; // Light text color
+
+$link: #FFF; // Link text color
+$hover: darken($link, 8%); // Link text color(hover)
+
+$border: #ddd; // Border color
+
+$green: #00caa5;
+$bgGray: #eaeaea;
+
+$icon-linkedin: "\e900";
+$icon-community: "\e901";
+$icon-hexagone: "\e902";
+$icon-js-republic: "\e903";
+$icon-menu: "\e904";
+$icon-open: "\e905";
+$icon-plane: "\e906";
+$icon-smile: "\e907";
+$icon-talk: "\e908";
+$icon-training: "\e909";
+$icon-twitter: "\e90a";
+$icon-ux-republic: "\e90b";
+
+$zIndexMin : 20;
+$zIndexStickyHeader: 21;
+$zIndexMenuLinkBefore: 22;
+$zIndexMenuLinkI: 23;
+$zIndexMenuLink: 23;
+$zIndexMiniature: 24;
+$zIndexKonamiOverlay: 25;
+$zIndexMiniBody: 26;
+$zIndexOverMyMiniBody: 27;
+$zIndexScreePreview: 28;
+$zIndexNavContainer: 29;
+$zIndexToggleMenu: 30;
+
+/*
+ * Don't forget to update in the JavaScript Too !!!!!
+ */
+$microScreenBreakPoint: 400px;
+$mobileBreakPoint: 550px;
+$tabletBreakPoint: 750px;
+$desktopBreakPoint: 1000px;

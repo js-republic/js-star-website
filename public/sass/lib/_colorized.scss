@@ -1,0 +1,49 @@
+input.colorized-bg {
+  border: 0;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+}
+
+input.colorized-bg::placeholder {
+  color: #FFF;
+  text-align: center;
+}
+
+input.colorized-bg::placeholder-shown {
+  color: #FFF;
+  text-align: center;
+}
+
+input.colorized-bg:-ms-input-placeholder {
+  color: #FFF;
+  text-align: center;
+}
+
+input.colorized-bg::-webkit-input-placeholder {
+  color: #FFF;
+  text-align: center;
+}
+
+input.colorized-bg::-moz-placeholder, input.colorized-bg:-moz-placeholder {
+  color: #FFF;
+  text-align: center;
+}
+
+header.colorized-bg.active {
+  transition: height 0.2s ease
+}
+$transition: 2s;
+@media (min-width: $tabletBreakPoint) {
+  .colorized.active {
+    transition: color $transition;
+  }
+  .colorized-bg.active {
+    transition: color $transition, background-color $transition;
+  }
+  header.colorized-bg.active {
+    transition: height 0.2s ease, background-color $transition;
+  }
+  input.colorized-bg.active {
+    transition: border-bottom-color $transition, background-color $transition;
+  }
+}

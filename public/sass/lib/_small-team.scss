@@ -1,0 +1,17 @@
+#small-team {
+
+  padding-top: 3em;
+  padding-bottom: 5em;
+  background-image: none;
+
+  @media (min-width: $mobileBreakPoint) {
+    background: url(../images/cube.svg) no-repeat;
+    background-position: center 1em;
+    background-size: 95em;
+  }
+
+  .origins {
+    margin-top: 3em;
+    text-align: justify;
+  }
+}

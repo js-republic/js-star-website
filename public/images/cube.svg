@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="748" height="200" viewBox="0 0 748 200">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #efefef;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="cube.svg" class="cls-1" d="M372.867,0L287,49.642v99.316L373.087,199l17.14-11.676-4.929-7.341-12.551,8.563-77.289-45.1V54.463l77.977-44.5,76.1,45.486v72.967L458,128.429V50.047L372.867,0"/>
+</svg>

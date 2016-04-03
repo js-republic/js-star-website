@@ -1,0 +1,10 @@
+.idea
+node_modules
+npm-debug.log
+build
+*.iml
+.publish
+.DS_Store
+test/output/reports/*
+test/output/logs/*
+gulp_with_env_vars.sh

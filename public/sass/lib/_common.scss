@@ -1,0 +1,103 @@
+body {
+  font-family: "Raleway", Helvetica, Arial, sans-serif;
+  background: $bg;
+  color: $base;
+  font-size: 1.9em;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: $link;
+  transition: all .2s;
+  &:hover {
+    color: $hover;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'bebas', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h2 {
+  padding-top: 1em;
+}
+
+section {
+}
+
+.bold {
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'bebas';
+
+  src: url('../fonts/bebas.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.hexagone.colorized-bg {
+  background-color: transparent;
+}
+
+#konami-overlay {
+  background: rgba(0, 0, 0, 0.85);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  z-index: $zIndexKonamiOverlay;
+  .video {
+    position: relative;
+    width: 560px;
+    height: 315px;
+    color: #fff;
+    margin: auto;
+    margin-top: 10%;
+  }
+}
+
+#miniature-container {
+  position: fixed;
+  right: 1em;
+  top: 4em;
+  width: 5%;
+  box-shadow: 2px 2px 15px #808080;
+  overflow: hidden;
+  z-index: $zIndexMiniature;
+  .mini-body {
+    background-color: white;
+    position: absolute;
+    transform-origin: 0% 0%;
+    z-index: $zIndexMiniBody;
+  }
+  .over-my-mini-body {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: $zIndexOverMyMiniBody;
+  }
+  .screen-preview {
+    position: relative;
+    width: 100%;
+    height: 3em;
+    background-color: rgba(256, 256, 256, 0.6);
+    border: 1px solid white;
+    box-sizing: border-box;
+    z-index: $zIndexScreePreview;
+  }
+}
+
+.container {
+  padding: 0 1.5em 0 1.5em; // override skeleton default padding
+}
+
+.unbreakable {
+  white-space: nowrap;
+}

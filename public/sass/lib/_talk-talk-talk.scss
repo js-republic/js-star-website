@@ -1,0 +1,73 @@
+#talk-talk-talk {
+  padding: 4em 0.5em 0 0.5em;
+  $bgTxtColor: #f6f6f6;
+  form {
+    .highlighted {
+      line-height: 3em;
+      background: $bgTxtColor;
+      padding: 0.5em;
+    }
+    select, input {
+      border-radius: 0;
+      outline-color: transparent;
+      outline-style: none;
+      box-shadow: 1px 5px 5px 0 #cfcfcf;
+      margin: 0.5em 0;
+      width: 100%;
+      @media (min-width: $microScreenBreakPoint) {
+        width: auto;
+      }
+      &:focus {
+        outline: 0;
+        border: 0;
+      }
+    }
+    select {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      -webkit-border-radius: 0;
+      text-shadow: 0 0 0 #000;
+      outline: none;
+      color: white;
+      font-weight: bold;
+      line-height: 1em;
+      padding: 0.5em;
+      border: none;
+      background-image: url('../images/triangle-down.svg');
+      background-repeat: no-repeat;
+      background-position: 97% 60%;
+      background-size: .6em;
+      padding-right: 1.1em;
+    }
+    .g-recaptcha {
+      display: none;
+    }
+    button {
+      background: $bgTxtColor;
+      margin-top: 1em;
+      box-shadow: 1px 5px 5px 0 #cfcfcf;
+      border-radius: 0;
+      border: none;
+      padding: 0;
+      line-height: 2em;
+      width: 100%;
+      text-align: left;
+      .colorized-bg {
+        display: inline-block;
+        padding: 0;
+        width: 2em;
+        color: white;
+        text-align: center;
+      }
+      .content {
+        padding: .2em 0.1em;
+      }
+      @media (min-width: $microScreenBreakPoint) {
+        width: auto;
+        .content {
+          padding: .4em 1.5em;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,60 @@
+.ambitions {
+  h2 {
+    margin: -4.8em 0 3.5em 0;
+    position: relative;
+    color: white;
+    @media (min-width: $mobileBreakPoint) {
+      padding: 0;
+      margin: 0 0 .4em 0;
+      color: black;
+    }
+  }
+
+  .container {
+    .numbered {
+      position: relative;
+      text-align: justify;
+      padding: 1em 0 0 2em;
+      line-height: 2em;
+      overflow: hidden;
+
+      &.author {
+        padding-bottom: 4em;
+        &::before {
+          content: "12";
+        }
+        .caret {
+          content: ' ';
+          display: inline-block;
+          height: 1em;
+          width: 2px;
+          background-color: black;
+          margin: 0 0 -.1em -.2em;
+          @keyframes caret-animation {
+            from, to {
+              background-color: transparent
+            }
+            50% {
+              background-color: black
+            }
+          }
+          animation: caret-animation 1s infinite;
+        }
+      }
+
+      &::before {
+        //@media (min-width: 750px) {
+        //  line-height: 2em;
+        //}
+        position: absolute;
+        content: "01020304050607080910111213141516171819";
+        margin: 0 0.5em 0 -2em;
+        color: gray;
+        font-family: 'PT Mono', sans-serif;
+        padding: 0;
+        width: 1.3em;
+        word-wrap: break-word;
+      }
+    }
+  }
+}

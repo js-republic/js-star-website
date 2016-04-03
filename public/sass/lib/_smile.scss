@@ -1,0 +1,29 @@
+footer {
+  height: 1em;
+  width: 100%;
+  text-align: center;
+  font-size: 2em;
+  display: table;
+
+  div {
+    display: none;
+    vertical-align: middle;
+    .icon-smile {
+      font-size: 2em;
+    }
+    p {
+      margin: 0;
+      a {
+        color: white;
+        text-decoration: none;
+      }
+    }
+  }
+
+  @media (min-width: $mobileBreakPoint) {
+    height: 11em;
+    div {
+      display: table-cell;
+    }
+  }
+}

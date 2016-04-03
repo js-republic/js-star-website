@@ -1,0 +1,62 @@
+@font-face {
+  font-family: 'icons';
+  src:    url('../fonts/icons.eot?tm64cj');
+  src:    url('../fonts/icons.eot?tm64cj#iefix') format('embedded-opentype'),
+  url('../fonts/icons.ttf?tm64cj') format('truetype'),
+  url('../fonts/icons.woff?tm64cj') format('woff'),
+  url('../fonts/icons.svg?tm64cj#icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.icon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-linkedin:before {
+  content: "\e900";
+}
+.icon-community:before {
+  content: "\e901";
+}
+.icon-hexagone:before {
+  content: "\e902";
+}
+.icon-js-republic:before {
+  content: "\e903";
+}
+.icon-menu:before {
+  content: "\e904";
+}
+.icon-open:before {
+  content: "\e905";
+}
+.icon-plane:before {
+  content: "\e906";
+}
+.icon-smile:before {
+  content: "\e907";
+}
+.icon-talk:before {
+  content: "\e908";
+}
+.icon-training:before {
+  content: "\e909";
+}
+.icon-twitter:before {
+  content: "\e90a";
+}
+.icon-ux-republic:before {
+  content: "\e90b";
+}

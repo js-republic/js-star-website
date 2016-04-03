@@ -1,0 +1,111 @@
+#js-people-section {
+  background-image: url('../images/bg-gray.svg');
+  background-size: cover;
+  background-position: center;
+
+  .join-us {
+    text-align: center;
+    font-size: 1.9em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+
+  .join-us-link {
+    color: black;
+    text-decoration: none;
+    line-height: 1.2em;
+    &:hover {
+      font-size: 1.2em;
+    }
+  }
+
+  .hexagone-text .row {
+    &:nth-child(even) {
+      .columns {
+        .hexagone {
+          margin-left: 1.95em;
+        }
+        p {
+          left: 8.7em;
+        }
+      }
+    }
+    &:nth-child(odd) {
+      .columns {
+        i {
+          margin-top: 0.1em;
+        }
+      }
+    }
+    .columns {
+      height: 3.35em;
+      display: table-cell;
+      vertical-align: middle;
+      position: relative;
+      p {
+        line-height: 1em;
+        margin: 0;
+        font-size: 0.7em;
+        position: absolute;
+        text-align: justify;
+        top: 67%;
+        transform: translateY(-50%);
+        left: 5.8em;
+      }
+      .hexagone {
+        @include hexagone(4.5em);
+        i {
+          font-size: 1.5em;
+        }
+      }
+    }
+    @media (min-width: $microScreenBreakPoint) {
+      .columns {
+        height: 3.7em;
+        .hexagone {
+          @include hexagone(5em);
+          i {
+            font-size: 1.7em;
+          }
+        }
+      }
+      &:nth-child(even) {
+        .columns p {
+          left: 9.2em;
+        }
+      }
+      &:nth-child(odd) {
+        .columns p {
+          left: 6.4em;
+        }
+      }
+    }
+    @media (min-width: $mobileBreakPoint) {
+      .columns {
+        p {
+          font-size: 0.7em;
+          left: 5.9em;
+        }
+      }
+    }
+    @media (min-width: $tabletBreakPoint) {
+      .columns {
+        height: 3.72em;
+        p {
+          font-size: 1em;
+          left: 5em;
+        }
+      }
+      &:nth-child(even) {
+        .columns {
+          .hexagone {
+            margin-left: 2.15em;
+          }
+          p {
+            left: 7em;
+          }
+        }
+      }
+    }
+  }
+}
